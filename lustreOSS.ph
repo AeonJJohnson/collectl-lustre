@@ -505,7 +505,7 @@ sub lustreOSSAnalyze {
     my $size = (split(/:/, $data))[0];
     my $bufNum = 0;
     foreach my $i (@brwBuckets) { 
-      last if ($size == $i);
+      last if ($size eq $i);
       $bufNum = $bufNum + 1;
     }
     
